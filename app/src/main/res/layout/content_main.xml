@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorPrimaryDark"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context=".MainActivity"
+    tools:showIn="@layout/app_bar_main">
+
+
+    <ImageButton
+        android:id="@+id/imageButtonSobreIgreja"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="32dp"
+        android:layout_marginEnd="8dp"
+        app:layout_constraintEnd_toStartOf="@+id/imageButtonsimbolosFe"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/btn_sobreaigreja"/>
+
+    <ImageButton
+        android:id="@+id/imageButtonsimbolosFe"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="32dp"
+        android:layout_marginEnd="8dp"
+        app:layout_constraintEnd_toStartOf="@+id/imageButtonSocieInternas"
+        app:layout_constraintStart_toEndOf="@+id/imageButtonSobreIgreja"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/btn_simbolosdefe" />
+
+    <ImageButton
+        android:id="@+id/imageButtonSocieInternas"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="32dp"
+        android:layout_marginEnd="8dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/imageButtonsimbolosFe"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/btn_sociedadesinternas" />
+
+    <ImageButton
+        android:id="@+id/imageButtonPresbiteros"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="8dp"
+        app:layout_constraintEnd_toStartOf="@+id/imageButtonDiaconos"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageButtonSobreIgreja"
+        app:srcCompat="@drawable/btn_presbiteros" />
+
+    <ImageButton
+        android:id="@+id/imageButtonDiaconos"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="8dp"
+        app:layout_constraintEnd_toStartOf="@+id/imageButtonBoletins"
+        app:layout_constraintStart_toEndOf="@+id/imageButtonPresbiteros"
+        app:layout_constraintTop_toBottomOf="@+id/imageButtonsimbolosFe"
+        app:srcCompat="@drawable/btn_diaconos" />
+
+    <ImageButton
+        android:id="@+id/imageButtonBoletins"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="8dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/imageButtonDiaconos"
+        app:layout_constraintTop_toBottomOf="@+id/imageButtonSocieInternas"
+        app:srcCompat="@drawable/btn_boletins" />
+
+    <ImageButton
+        android:id="@+id/imageButtonPregacoes"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="8dp"
+        app:layout_constraintEnd_toStartOf="@+id/imageButtonRadioIpb"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageButtonPresbiteros"
+        app:srcCompat="@drawable/btn_pregacoes" />
+
+    <ImageButton
+        android:id="@+id/imageButtonRadioIpb"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="8dp"
+        app:layout_constraintEnd_toStartOf="@+id/imageButtonBlogIpcn"
+        app:layout_constraintStart_toEndOf="@+id/imageButtonPregacoes"
+        app:layout_constraintTop_toBottomOf="@+id/imageButtonDiaconos"
+        app:srcCompat="@drawable/btn_radioipb" />
+
+    <ImageButton
+        android:id="@+id/imageButtonBlogIpcn"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="8dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/imageButtonRadioIpb"
+        app:layout_constraintTop_toBottomOf="@+id/imageButtonBoletins"
+        app:srcCompat="@drawable/btn_blogipcn" />
+
+</android.support.constraint.ConstraintLayout>

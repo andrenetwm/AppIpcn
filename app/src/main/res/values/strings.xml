@@ -1,0 +1,19 @@
+<resources>
+    <string name="app_name">Aplicativo IPCN</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="nav_header_title">APLICATIVO DA IGREJA PRESBITERIANA DA CIDADE NOVA</string>
+    <string name="nav_header_desc">Navigation header</string>
+    <string name="action_settings">Settings</string>
+    <string name="title_activity_teste_scrollview">testeScrollview</string>
+    <string name="title_activity_sobre_aipcn">A IPCN</string>
+
+    <string name="title_activity_fullscreen">FullscreenActivity</string>
+    <string name="dummy_button">Dummy Button</string>
+    <string name="dummy_content">DUMMY\nCONTENT</string>
+    <string name="title_activity_sobre_ipb">A Igreja Presbiteriana do Brasil</string>
+    <string name="title_home">Home</string>
+    <string name="title_ipb">IPB</string>
+    <string name="title_notifications">IPCN</string>
+    <string name="title_activity_sobre_aipb">Sobre a IPB</string>
+</resources>
