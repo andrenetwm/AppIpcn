@@ -21,25 +21,36 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-
         <activity android:name=".Simbolosfe">
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value="com.example.root.ipcn_app.MainActivity" />
         </activity>
-
         <activity android:name=".ipcnActivity">
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value="com.example.root.ipcn_app.MainActivity" />
         </activity>
-
         <activity android:name=".ipbActivity">
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value="com.example.root.ipcn_app.MainActivity" />
         </activity>
-
+        <activity android:name=".SociedadesInternasActivity">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.example.root.ipcn_app.MainActivity" />
+        </activity>
+        <activity android:name=".PresbiterosActivity">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.example.root.ipcn_app.MainActivity" />
+        </activity>
+        <activity android:name=".DiaconosActivity">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.example.root.ipcn_app.MainActivity" />
+        </activity>
     </application>
 
 </manifest>

@@ -54,6 +54,42 @@ public class MainActivity extends AppCompatActivity
 
             });
 
+        ImageButton sociedadeInternas=(ImageButton) findViewById(R.id.imageButtonSocieInternas);
+        sociedadeInternas.setOnClickListener(new View.OnClickListener() {
+
+            @Override
+            public void onClick(View v) {
+                Intent intent1=new Intent(MainActivity.this,SociedadesInternasActivity.class);
+                startActivity(intent1);
+
+            }
+
+        });
+
+        ImageButton Diaconos=(ImageButton) findViewById(R.id.imageButtonDiaconos);
+        Diaconos.setOnClickListener(new View.OnClickListener() {
+
+            @Override
+            public void onClick(View v) {
+                Intent intent1=new Intent(MainActivity.this,DiaconosActivity.class);
+                startActivity(intent1);
+
+            }
+
+        });
+
+        ImageButton Presbiteros=(ImageButton) findViewById(R.id.imageButtonPresbiteros);
+        Presbiteros.setOnClickListener(new View.OnClickListener() {
+
+            @Override
+            public void onClick(View v) {
+                Intent intent1=new Intent(MainActivity.this,PresbiterosActivity.class);
+                startActivity(intent1);
+
+            }
+
+        });
+
 
         FloatingActionButton fab = (FloatingActionButton) findViewById(R.id.fab);
         fab.setOnClickListener(new View.OnClickListener() {
@@ -135,6 +171,8 @@ public class MainActivity extends AppCompatActivity
             startActivity(intent1);
 
         } else if (id == R.id.nav_soc_interna) {
+            Intent intent1=new Intent(MainActivity.this,SociedadesInternasActivity.class);
+            startActivity(intent1);
 
         } else if (id == R.id.nav_pregacoes_ipcn) {
 
@@ -145,8 +183,12 @@ public class MainActivity extends AppCompatActivity
         } else if (id == R.id.nav_biblia_ipcn) {
 
         } else if (id == R.id.nav_presbiteros) {
+            Intent intent1=new Intent(MainActivity.this,PresbiterosActivity.class);
+            startActivity(intent1);
 
         } else if (id == R.id.nav_diaconos) {
+            Intent intent1=new Intent(MainActivity.this,DiaconosActivity.class);
+            startActivity(intent1);
 
         } else if (id == R.id.nav_site_ipcn) {
             String url = "http://www.ipcn.org.br";
