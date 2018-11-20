@@ -5,17 +5,17 @@ import android.os.Bundle;
 import android.webkit.WebSettings;
 import android.webkit.WebView;
 
-public class ipbActivity extends AppCompatActivity {
+public class PregacoesActivity extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_ipb);
+        setContentView(R.layout.activity_pregacoes);
 
-        WebView webView=(WebView)findViewById(R.id.webview_ipb);
+        WebView webView=(WebView)findViewById(R.id.webview_pregacoes);
 
         WebSettings webSettings=webView.getSettings();
         webSettings.setJavaScriptEnabled(true);
-        webView.loadUrl("file:///android_asset/a_ipb.html");
+        webView.loadUrl("http://ipcn.org.br/app/pregacoes/pregacoes.html");
     }
 }

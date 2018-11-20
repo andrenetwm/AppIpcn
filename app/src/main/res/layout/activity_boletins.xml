@@ -1,0 +1,223 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#a87b26"
+    tools:context=".BoletinsActivity">
+
+    <Button
+        android:id="@+id/btn_dezembro"
+        style="@style/Widget.AppCompat.Button.Colored"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="4dp"
+        android:layout_marginTop="42dp"
+        android:layout_marginEnd="50dp"
+        android:background="@color/colorAccent"
+        android:text="Dezembro"
+        android:textAllCaps="false"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/btn_novembro"
+        app:layout_constraintTop_toBottomOf="@+id/textView2018" />
+
+    <Button
+        android:id="@+id/btn_novembro"
+        style="@style/Widget.AppCompat.Button.Colored"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="4dp"
+        android:layout_marginTop="42dp"
+        android:layout_marginEnd="4dp"
+        android:background="@color/colorPrimary"
+        android:text="Novembro"
+        android:textAllCaps="false"
+        app:layout_constraintEnd_toStartOf="@+id/btn_dezembro"
+        app:layout_constraintStart_toEndOf="@+id/btn_outubro"
+        app:layout_constraintTop_toBottomOf="@+id/textView2018" />
+
+    <Button
+        android:id="@+id/btn_outubro"
+        style="@style/Widget.AppCompat.Button.Colored"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="50dp"
+        android:layout_marginTop="42dp"
+        android:layout_marginEnd="4dp"
+        android:background="@color/colorAccent"
+        android:text="Outubro"
+        android:textAllCaps="false"
+        app:layout_constraintEnd_toStartOf="@+id/btn_novembro"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView2018" />
+
+    <Button
+        android:id="@+id/btn_setembro"
+        style="@style/Widget.AppCompat.Button.Colored"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="4dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="50dp"
+        android:background="@color/colorAccent"
+        android:text="Setembro"
+        android:textAllCaps="false"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/btn_agosto"
+        app:layout_constraintTop_toBottomOf="@+id/btn_dezembro" />
+
+    <Button
+        android:id="@+id/btn_agosto"
+        style="@style/Widget.AppCompat.Button.Colored"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="4dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="4dp"
+        android:background="@color/colorAccent"
+        android:text="Agosto"
+        android:textAllCaps="false"
+        app:layout_constraintEnd_toStartOf="@+id/btn_setembro"
+        app:layout_constraintStart_toEndOf="@+id/btn_julho"
+        app:layout_constraintTop_toBottomOf="@+id/btn_novembro" />
+
+    <Button
+        android:id="@+id/btn_junho"
+        style="@style/Widget.AppCompat.Button.Colored"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="4dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="50dp"
+        android:background="@color/colorAccent"
+        android:text="Junho"
+        android:textAllCaps="false"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/btn_maio"
+        app:layout_constraintTop_toBottomOf="@+id/btn_setembro" />
+
+    <Button
+        android:id="@+id/btn_julho"
+        style="@style/Widget.AppCompat.Button.Colored"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="50dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="4dp"
+        android:background="@color/colorAccent"
+        android:text="Julho"
+        android:textAllCaps="false"
+        app:layout_constraintEnd_toStartOf="@+id/btn_agosto"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btn_outubro" />
+
+    <Button
+        android:id="@+id/btn_maio"
+        style="@style/Widget.AppCompat.Button.Colored"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="4dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="4dp"
+        android:background="@color/colorAccent"
+        android:text="Maio"
+        android:textAllCaps="false"
+        app:layout_constraintEnd_toStartOf="@+id/btn_junho"
+        app:layout_constraintStart_toEndOf="@+id/btn_abril"
+        app:layout_constraintTop_toBottomOf="@+id/btn_agosto" />
+
+    <Button
+        android:id="@+id/btn_abril"
+        style="@style/Widget.AppCompat.Button.Colored"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="50dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="4dp"
+        android:background="@color/colorAccent"
+        android:text="Abril"
+        android:textAllCaps="false"
+        app:layout_constraintEnd_toStartOf="@+id/btn_maio"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btn_julho" />
+
+    <Button
+        android:id="@+id/btn_marco"
+        style="@style/Widget.AppCompat.Button.Colored"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="4dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="50dp"
+        android:background="@color/colorAccent"
+        android:text="Março"
+        android:textAllCaps="false"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/btn_fevereiro"
+        app:layout_constraintTop_toBottomOf="@+id/btn_junho" />
+
+    <Button
+        android:id="@+id/btn_fevereiro"
+        style="@style/Widget.AppCompat.Button.Colored"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="4dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="4dp"
+        android:background="@color/colorAccent"
+        android:text="Fevereiro"
+        android:textAllCaps="false"
+        app:layout_constraintEnd_toStartOf="@+id/btn_marco"
+        app:layout_constraintStart_toEndOf="@+id/btn_janeiro"
+        app:layout_constraintTop_toBottomOf="@+id/btn_maio" />
+
+    <Button
+        android:id="@+id/btn_janeiro"
+        style="@style/Widget.AppCompat.Button.Colored"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="50dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="4dp"
+        android:background="@color/colorAccent"
+        android:text="Janeiro"
+        android:textAllCaps="false"
+        app:layout_constraintEnd_toStartOf="@+id/btn_fevereiro"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btn_abril" />
+
+
+    <TextView
+        android:id="@+id/textViewBoletins"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="8dp"
+        android:text="BOLETINS MENSAIS"
+        android:textColor="@android:color/background_light"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.503"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textView2018"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="8dp"
+        android:text="Ano 2018"
+        android:textColor="@android:color/background_light"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.501"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textViewBoletins" />
+
+</android.support.constraint.ConstraintLayout>

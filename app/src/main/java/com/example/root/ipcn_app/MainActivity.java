@@ -15,6 +15,8 @@ import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.webkit.WebSettings;
+import android.webkit.WebView;
 import android.widget.Button;
 import android.widget.ImageButton;
 
@@ -29,67 +31,6 @@ public class MainActivity extends AppCompatActivity
         setContentView(R.layout.activity_main);
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
-
-        ImageButton sobreaipcn=(ImageButton) findViewById(R.id.imageButtonSobreIgreja);
-        sobreaipcn.setOnClickListener(new View.OnClickListener() {
-
-            @Override
-            public void onClick(View v) {
-                Intent intent1=new Intent(MainActivity.this,ipcnActivity.class);
-                startActivity(intent1);
-
-            }
-
-        });
-
-            ImageButton simbolosfe=(ImageButton) findViewById(R.id.imageButtonsimbolosFe);
-            simbolosfe.setOnClickListener(new View.OnClickListener() {
-
-                @Override
-                public void onClick(View v) {
-                    Intent intent1=new Intent(MainActivity.this,Simbolosfe.class);
-                    startActivity(intent1);
-
-                }
-
-            });
-
-        ImageButton sociedadeInternas=(ImageButton) findViewById(R.id.imageButtonSocieInternas);
-        sociedadeInternas.setOnClickListener(new View.OnClickListener() {
-
-            @Override
-            public void onClick(View v) {
-                Intent intent1=new Intent(MainActivity.this,SociedadesInternasActivity.class);
-                startActivity(intent1);
-
-            }
-
-        });
-
-        ImageButton Diaconos=(ImageButton) findViewById(R.id.imageButtonDiaconos);
-        Diaconos.setOnClickListener(new View.OnClickListener() {
-
-            @Override
-            public void onClick(View v) {
-                Intent intent1=new Intent(MainActivity.this,DiaconosActivity.class);
-                startActivity(intent1);
-
-            }
-
-        });
-
-        ImageButton Presbiteros=(ImageButton) findViewById(R.id.imageButtonPresbiteros);
-        Presbiteros.setOnClickListener(new View.OnClickListener() {
-
-            @Override
-            public void onClick(View v) {
-                Intent intent1=new Intent(MainActivity.this,PresbiterosActivity.class);
-                startActivity(intent1);
-
-            }
-
-        });
-
 
         FloatingActionButton fab = (FloatingActionButton) findViewById(R.id.fab);
         fab.setOnClickListener(new View.OnClickListener() {
@@ -153,18 +94,13 @@ public class MainActivity extends AppCompatActivity
         if (id == R.id.nav_camera) {
             // Handle the camera action
 
-        } else if (id == R.id.nav_sobreIpcn) {
-            Intent intent1=new Intent(MainActivity.this,ipcnActivity.class);
+        } else if (id == R.id.nav_sobreIgreja) {
+            Intent intent1=new Intent(MainActivity.this,SobreIgrejaActivity.class);
             startActivity(intent1);
 
 
 
             /**fragmentManager.beginTransaction().replace(R.id.conteudo_fragmento, new FragmentoSobreIpcn()).commit();*/
-
-
-        } else if (id == R.id.nav_sobreAipb) {
-            Intent intent1=new Intent(MainActivity.this,ipbActivity.class);
-            startActivity(intent1);
 
         } else if (id == R.id.nav_simbolo_fe) {
             Intent intent1=new Intent(MainActivity.this,Simbolosfe.class);
@@ -174,20 +110,22 @@ public class MainActivity extends AppCompatActivity
             Intent intent1=new Intent(MainActivity.this,SociedadesInternasActivity.class);
             startActivity(intent1);
 
-        } else if (id == R.id.nav_pregacoes_ipcn) {
+        } else if (id == R.id.nav_galeria_videos) {
+            Intent intent1=new Intent(MainActivity.this,PregacoesActivity.class);
+            startActivity(intent1);
 
         } else if (id == R.id.nav_boletim_ipcn) {
+            Intent intent1=new Intent(MainActivity.this,BoletinsActivity.class);
+            startActivity(intent1);
 
         } else if (id == R.id.nav_radio_ipb) {
+            Intent intent1=new Intent(MainActivity.this,RadioIpbActivity.class);
+            startActivity(intent1);
 
         } else if (id == R.id.nav_biblia_ipcn) {
 
-        } else if (id == R.id.nav_presbiteros) {
-            Intent intent1=new Intent(MainActivity.this,PresbiterosActivity.class);
-            startActivity(intent1);
-
-        } else if (id == R.id.nav_diaconos) {
-            Intent intent1=new Intent(MainActivity.this,DiaconosActivity.class);
+        } else if (id == R.id.nav_Lideranca) {
+            Intent intent1=new Intent(MainActivity.this,LiderancaActivity.class);
             startActivity(intent1);
 
         } else if (id == R.id.nav_site_ipcn) {

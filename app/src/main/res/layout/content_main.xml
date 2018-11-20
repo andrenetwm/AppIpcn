@@ -4,118 +4,48 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/colorPrimaryDark"
+    android:background="@android:color/holo_orange_light"
     app:layout_behavior="@string/appbar_scrolling_view_behavior"
     tools:context=".MainActivity"
     tools:showIn="@layout/app_bar_main">
 
 
-    <ImageButton
-        android:id="@+id/imageButtonSobreIgreja"
-        android:layout_width="100dp"
-        android:layout_height="100dp"
-        android:layout_marginStart="8dp"
-        android:layout_marginTop="32dp"
-        android:layout_marginEnd="8dp"
-        app:layout_constraintEnd_toStartOf="@+id/imageButtonsimbolosFe"
+    <ImageView
+        android:id="@+id/imageViewLogoIpcn"
+        android:layout_width="189dp"
+        android:layout_height="189dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="16dp"
+        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/btn_sobreaigreja"/>
+        app:srcCompat="@drawable/logo_ipcn_app" />
 
-    <ImageButton
-        android:id="@+id/imageButtonsimbolosFe"
-        android:layout_width="100dp"
-        android:layout_height="100dp"
-        android:layout_marginStart="8dp"
-        android:layout_marginTop="32dp"
-        android:layout_marginEnd="8dp"
-        app:layout_constraintEnd_toStartOf="@+id/imageButtonSocieInternas"
-        app:layout_constraintStart_toEndOf="@+id/imageButtonSobreIgreja"
-        app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/btn_simbolosdefe" />
-
-    <ImageButton
-        android:id="@+id/imageButtonSocieInternas"
-        android:layout_width="100dp"
-        android:layout_height="100dp"
-        android:layout_marginStart="8dp"
-        android:layout_marginTop="32dp"
-        android:layout_marginEnd="8dp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toEndOf="@+id/imageButtonsimbolosFe"
-        app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/btn_sociedadesinternas" />
-
-    <ImageButton
-        android:id="@+id/imageButtonPresbiteros"
-        android:layout_width="100dp"
-        android:layout_height="100dp"
-        android:layout_marginStart="8dp"
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="320dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="6dp"
         android:layout_marginTop="16dp"
-        android:layout_marginEnd="8dp"
-        app:layout_constraintEnd_toStartOf="@+id/imageButtonDiaconos"
+        android:layout_marginEnd="6dp"
+        android:fontFamily="casual"
+        android:text="@string/nav_header_title"
+        android:textAlignment="center"
+        android:textColor="@android:color/black"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/imageButtonSobreIgreja"
-        app:srcCompat="@drawable/btn_presbiteros" />
+        app:layout_constraintTop_toBottomOf="@+id/imageViewLogoIpcn" />
 
-    <ImageButton
-        android:id="@+id/imageButtonDiaconos"
-        android:layout_width="100dp"
-        android:layout_height="100dp"
-        android:layout_marginStart="8dp"
-        android:layout_marginTop="16dp"
-        android:layout_marginEnd="8dp"
-        app:layout_constraintEnd_toStartOf="@+id/imageButtonBoletins"
-        app:layout_constraintStart_toEndOf="@+id/imageButtonPresbiteros"
-        app:layout_constraintTop_toBottomOf="@+id/imageButtonsimbolosFe"
-        app:srcCompat="@drawable/btn_diaconos" />
-
-    <ImageButton
-        android:id="@+id/imageButtonBoletins"
-        android:layout_width="100dp"
-        android:layout_height="100dp"
-        android:layout_marginStart="8dp"
-        android:layout_marginTop="16dp"
-        android:layout_marginEnd="8dp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toEndOf="@+id/imageButtonDiaconos"
-        app:layout_constraintTop_toBottomOf="@+id/imageButtonSocieInternas"
-        app:srcCompat="@drawable/btn_boletins" />
-
-    <ImageButton
-        android:id="@+id/imageButtonPregacoes"
-        android:layout_width="100dp"
-        android:layout_height="100dp"
-        android:layout_marginStart="8dp"
-        android:layout_marginTop="16dp"
-        android:layout_marginEnd="8dp"
-        app:layout_constraintEnd_toStartOf="@+id/imageButtonRadioIpb"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/imageButtonPresbiteros"
-        app:srcCompat="@drawable/btn_pregacoes" />
-
-    <ImageButton
-        android:id="@+id/imageButtonRadioIpb"
-        android:layout_width="100dp"
-        android:layout_height="100dp"
-        android:layout_marginStart="8dp"
-        android:layout_marginTop="16dp"
-        android:layout_marginEnd="8dp"
-        app:layout_constraintEnd_toStartOf="@+id/imageButtonBlogIpcn"
-        app:layout_constraintStart_toEndOf="@+id/imageButtonPregacoes"
-        app:layout_constraintTop_toBottomOf="@+id/imageButtonDiaconos"
-        app:srcCompat="@drawable/btn_radioipb" />
-
-    <ImageButton
-        android:id="@+id/imageButtonBlogIpcn"
-        android:layout_width="100dp"
-        android:layout_height="100dp"
-        android:layout_marginStart="8dp"
-        android:layout_marginTop="16dp"
-        android:layout_marginEnd="8dp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toEndOf="@+id/imageButtonRadioIpb"
-        app:layout_constraintTop_toBottomOf="@+id/imageButtonBoletins"
-        app:srcCompat="@drawable/btn_blogipcn" />
+    <ImageView
+        android:id="@+id/imageView3"
+        android:layout_width="67dp"
+        android:layout_height="66dp"
+        app:srcCompat="@drawable/facebook_logo_button"
+        tools:layout_editor_absoluteX="50dp"
+        tools:layout_editor_absoluteY="381dp"
+        tools:visibility="visible" />
 
 </android.support.constraint.ConstraintLayout>

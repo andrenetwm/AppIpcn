@@ -5,14 +5,9 @@
 
     <group android:checkableBehavior="single">
         <item
-            android:id="@+id/nav_sobreIpcn"
+            android:id="@+id/nav_sobreIgreja"
             android:icon="@drawable/ic_igreja"
-            android:title="Sobre a IPCN"/>
-
-        <item
-            android:id="@+id/nav_sobreAipb"
-            android:icon="@drawable/ic_igreja"
-            android:title="Sobre a IPB"/>
+            android:title="Sobre a Igreja"/>
 
         <item
             android:id="@+id/nav_simbolo_fe"
@@ -20,41 +15,24 @@
             android:title="Símbolos de Fé"/>
 
         <item
+            android:id="@+id/nav_Lideranca"
+            android:icon="@drawable/ic_soc_interna"
+            android:title="Liderança" />
+
+        <item
             android:id="@+id/nav_soc_interna"
             android:icon="@drawable/ic_soc_interna"
             android:title="Sociedade Internas"/>
 
         <item
-            android:id="@+id/nav_pregacoes_ipcn"
+            android:id="@+id/nav_galeria_videos"
             android:icon="@drawable/ic_pregacoes_ipcn"
-            android:title="Pregações"/>
+            android:title="Galeria de Vídeos"/>
 
         <item
             android:id="@+id/nav_boletim_ipcn"
             android:icon="@drawable/ic_boletim_ipcn"
             android:title="Boletins"/>
-
-    </group>
-
-    <group android:checkableBehavior="single">
-        <item
-            android:title="Liderança">
-            <menu>
-                <item
-                    android:id="@+id/nav_presbiteros"
-                    android:icon="@drawable/ic_check_black_24dp"
-                    android:title="Presbíteros"/>
-
-                <item
-                    android:id="@+id/nav_diaconos"
-                    android:icon="@drawable/ic_check_black_24dp"
-                    android:title="Diáconos">
-
-                </item>
-
-            </menu>
-
-        </item>
 
     </group>
 

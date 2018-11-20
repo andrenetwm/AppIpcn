@@ -3,6 +3,7 @@
     package="com.example.root.ipcn_app">
 
     <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
 
     <application
         android:allowBackup="true"
@@ -21,32 +22,71 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".Simbolosfe">
+        <activity
+            android:name=".Simbolosfe"
+            android:label="Símbolos de Fé da IPCN">
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value="com.example.root.ipcn_app.MainActivity" />
         </activity>
-        <activity android:name=".ipcnActivity">
+        <activity
+            android:name=".SociedadesInternasActivity"
+            android:label="Sociedades Internas">
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value="com.example.root.ipcn_app.MainActivity" />
         </activity>
-        <activity android:name=".ipbActivity">
+        <activity
+            android:name=".BoletinsActivity"
+            android:label="Boletins Mensais">
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value="com.example.root.ipcn_app.MainActivity" />
         </activity>
-        <activity android:name=".SociedadesInternasActivity">
+        <activity
+            android:name=".CfwPdfActivity"
+            android:label="Confis. de Fé de Westminster">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.example.root.ipcn_app.Simbolosfe" />
+        </activity>
+        <activity
+            android:name=".RadioIpbActivity"
+            android:label="Rádio IPB">
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value="com.example.root.ipcn_app.MainActivity" />
         </activity>
-        <activity android:name=".PresbiterosActivity">
+        <activity
+            android:name=".CmwPdfActivity"
+            android:label="Catecismo maior de Westminster">
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value="com.example.root.ipcn_app.MainActivity" />
         </activity>
-        <activity android:name=".DiaconosActivity">
+        <activity
+            android:name=".BreveCWPdfActivity"
+            android:label="Breve Catecismo de Westminster">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.example.root.ipcn_app.MainActivity" />
+        </activity>
+        <activity
+            android:name=".PregacoesActivity"
+            android:label="Galeria de vídeos IPCN">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.example.root.ipcn_app.MainActivity" />
+        </activity>
+        <activity
+            android:name=".SobreIgrejaActivity"
+            android:label="Sobre a IPCN e IPB">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.example.root.ipcn_app.MainActivity" />
+        </activity>
+        <activity android:name=".LiderancaActivity"
+            android:label="Liderança IPCN">
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value="com.example.root.ipcn_app.MainActivity" />
