@@ -3,8 +3,11 @@
     <string name="navigation_drawer_open">Open navigation drawer</string>
     <string name="navigation_drawer_close">Close navigation drawer</string>
     <string name="nav_header_title">APLICATIVO OFICIAL DA IGREJA PRESBITERIANA DA CIDADE NOVA</string>
+    <string name="nav_sobre_des">Desenvolvido por André Farias</string>
+    <string name="nav_sobre_report">Reportar bugs no App para contato@asfhost.com.br</string>
+    <string name="nav_versao">Versão 1.0</string>
     <string name="nav_header_desc">Navigation header</string>
-    <string name="action_settings">Settings</string>
+    <string name="action_settings">Sobre</string>
     <string name="title_activity_teste_scrollview">testeScrollview</string>
     <string name="title_activity_sobre_aipcn">A IPCN</string>
 

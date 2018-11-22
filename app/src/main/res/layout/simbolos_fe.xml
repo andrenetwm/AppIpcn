@@ -15,12 +15,12 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="16dp"
         android:layout_marginTop="144dp"
-        android:layout_marginEnd="8dp"
-        android:background="@color/colorAccent"
+        android:layout_marginEnd="16dp"
+        android:background="@android:color/holo_orange_dark"
         android:text="CONFISSÃO DE FÉ DE WESTMINSTER"
         android:textAlignment="center"
         android:textSize="14sp"
-        app:layout_constraintEnd_toStartOf="@+id/imageButtonDownCfw"
+        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
@@ -31,11 +31,11 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="16dp"
         android:layout_marginTop="8dp"
-        android:layout_marginEnd="8dp"
-        android:background="@color/colorAccent"
+        android:layout_marginEnd="16dp"
+        android:background="@android:color/holo_orange_dark"
         android:text="CATECISMO MAIOR DE WESTMINSTER"
         android:textSize="14sp"
-        app:layout_constraintEnd_toStartOf="@+id/imageButtonDownCmw"
+        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/btn_cfw" />
 
@@ -46,11 +46,11 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="16dp"
         android:layout_marginTop="8dp"
-        android:layout_marginEnd="8dp"
-        android:background="@color/colorAccent"
+        android:layout_marginEnd="16dp"
+        android:background="@android:color/holo_orange_dark"
         android:text="BREVE CATECISMO DE WESTMINSTER"
         android:textSize="14sp"
-        app:layout_constraintEnd_toStartOf="@+id/imageButtonDownBcw"
+        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/btn_cmw" />
 
@@ -71,77 +71,15 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
-    <ImageButton
-        android:id="@+id/imageButtonDownCfw"
-        android:onClick="DownCfw"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="8dp"
-        android:layout_marginTop="155dp"
-        android:layout_marginEnd="8dp"
-        android:layout_marginBottom="56dp"
-        android:background="@color/black_overlay"
-        app:layout_constraintBottom_toTopOf="@+id/imageButtonDownCmw"
+    <ImageView
+        android:id="@+id/imageViewBgSimbolosFe"
+        android:layout_width="385dp"
+        android:layout_height="552dp"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toEndOf="@+id/btn_cfw"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="1.0"
-        app:srcCompat="@android:drawable/stat_sys_download" />
-
-    <ImageButton
-        android:id="@+id/imageButtonDownCmw"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="8dp"
-        android:layout_marginTop="32dp"
-        android:layout_marginEnd="8dp"
-        android:background="@color/black_overlay"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toEndOf="@+id/btn_cmw"
-        app:layout_constraintTop_toBottomOf="@+id/imageButtonDownCfw"
-        app:srcCompat="@android:drawable/stat_sys_download" />
-
-    <ImageButton
-        android:id="@+id/imageButtonDownBcw"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="8dp"
-        android:layout_marginTop="32dp"
-        android:layout_marginEnd="8dp"
-        android:background="@color/black_overlay"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toEndOf="@+id/btn_bcw"
-        app:layout_constraintTop_toBottomOf="@+id/imageButtonDownCmw"
-        app:srcCompat="@android:drawable/stat_sys_download" />
-
-    <TextView
-        android:id="@+id/textViewVisualizar"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="8dp"
-        android:layout_marginTop="8dp"
-        android:layout_marginEnd="8dp"
-        android:layout_marginBottom="8dp"
-        android:text="Visualizar"
-        android:textColor="@android:color/background_light"
-        android:textStyle="bold"
-        app:layout_constraintBottom_toTopOf="@+id/btn_cfw"
-        app:layout_constraintEnd_toStartOf="@+id/textViewDownload"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView2" />
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/bg_degrade" />
 
-    <TextView
-        android:id="@+id/textViewDownload"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="8dp"
-        android:layout_marginEnd="8dp"
-        android:layout_marginBottom="8dp"
-        android:text="Download"
-        android:textColor="@android:color/background_light"
-        android:textStyle="bold"
-        app:layout_constraintBottom_toTopOf="@+id/btn_cfw"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView2" />
 
 </android.support.constraint.ConstraintLayout>

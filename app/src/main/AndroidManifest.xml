@@ -14,7 +14,7 @@
         android:theme="@style/AppTheme">
         <activity
             android:name=".MainActivity"
-            android:label="@string/app_name"
+            android:label=""
             android:theme="@style/AppTheme.NoActionBar">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -62,14 +62,14 @@
             android:label="Catecismo maior de Westminster">
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
-                android:value="com.example.root.ipcn_app.MainActivity" />
+                android:value="com.example.root.ipcn_app.Simbolosfe" />
         </activity>
         <activity
             android:name=".BreveCWPdfActivity"
             android:label="Breve Catecismo de Westminster">
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
-                android:value="com.example.root.ipcn_app.MainActivity" />
+                android:value="com.example.root.ipcn_app.Simbolosfe" />
         </activity>
         <activity
             android:name=".PregacoesActivity"
@@ -85,11 +85,25 @@
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value="com.example.root.ipcn_app.MainActivity" />
         </activity>
-        <activity android:name=".LiderancaActivity"
+        <activity
+            android:name=".LiderancaActivity"
             android:label="Liderança IPCN">
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value="com.example.root.ipcn_app.MainActivity" />
+        </activity>
+        <activity
+            android:name=".SobreActivity"
+            android:label="Sobre">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.example.root.ipcn_app.MainActivity" />
+        </activity>
+        <activity android:name=".JaneiroBoletimActivity"
+            android:label="Boletim de Janeiro">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.example.root.ipcn_app.BoletinsActivity" />
         </activity>
     </application>
 
